@@ -7,8 +7,8 @@
 template <class T>
 Queue<T>::Queue() {}
 
-// Fill constructor
-// Time Complexity: O(N), where N is the number of elements to fill.    FILL CONSTRUCTOR
+// Fill Constructor
+// Time Complexity: O(N), where N is the number of elements to fill.
 template <class T>
 Queue<T>::Queue(int& capacity, const T& data) {
     if (capacity <= 0) {
@@ -19,15 +19,15 @@ Queue<T>::Queue(int& capacity, const T& data) {
     queue_.swap(temp_queue);
 }
 
-// Copy constructor
-// Time Complexity: O(N), where N is the number of elements in the other queue.     COPY CONSTRUCTOR
+// Copy Constructor
+// Time Complexity: O(N), where N is the number of elements in the other queue.
 template <class T>
 Queue<T>::Queue(const Queue<T>& other) {
     std::vector<T> temp_queue(other.queue_);
     queue_.swap(temp_queue);
 }
 
-// Time Complexity: O(N), where N is the number of elements that are in the queue.  DESTRUCTOR
+// Time Complexity: O(N), where N is the number of elements that are in the queue.
 template <class T>
 Queue<T>::~Queue() {
     queue_.clear();

@@ -21,7 +21,7 @@ class Queue {
         std::vector<T> queue_;
     public:
         Queue();
-        Queue(int& capacity, const T& data);
+        Queue(const int& capacity, const T& data);
         Queue(const Queue<T>& other);
         ~Queue();
         T& operator=(const Queue<T>& other);

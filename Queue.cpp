@@ -10,9 +10,11 @@ Queue<T>::Queue() {}
 // Fill Constructor
 // Time Complexity: O(N), where N is the number of elements to fill.
 template <class T>
-Queue<T>::Queue(int& capacity, const T& data) {
+Queue<T>::Queue(const int& capacity, const T& data) {
     if (capacity <= 0) {
-        capacity = 1;
+        std::vector<T> temp(1, data);
+        queue_.swap(temp);
+        return;
     }
 
     std::vector<T> temp_queue(capacity, data);

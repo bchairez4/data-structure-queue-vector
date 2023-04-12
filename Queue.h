@@ -4,9 +4,9 @@
 *    Advantages:                                                             *
 *       -Fast operations: O(1)amortized push(); O(1) front() and back()      *
 *       -Built in vector size tracking and functions are helpful             *
-*    Disadvantages:                                                          *
+*    Limitations:                                                            *
 *       -pop() is O(N) everytime due to scooting of internal vector          *
-*       -No way to access anything in the middle or end                      *
+*       -No way to access anything in the middle or end from the queue       *
 *****************************************************************************/
 
 #ifndef QUEUE_H

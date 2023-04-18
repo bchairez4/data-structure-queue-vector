@@ -66,14 +66,14 @@ void Queue<T>::pop() {
 // Time Complexity: O(1)        
 //!!WARNING: UNDEFINED BEHAVIOR IF QUEUE IS EMPTY.
 template <class T>
-T& Queue<T>::front() {
+T Queue<T>::front() const {
     return queue_.front();
 }
 
 // Time Complexity: O(1)        
 //!!WARNING: UNDEFINED BEHAVIOR IF QUEUE IS EMPTY.
 template <class T>
-T& Queue<T>::back() {
+T Queue<T>::back() const {
     return queue_.back();
 }
 

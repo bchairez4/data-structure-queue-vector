@@ -27,8 +27,8 @@ class Queue {
         T& operator=(const Queue<T>& other);
         void push(const T& data);
         void pop(); // Pops front
-        T& front();
-        T& back();
+        T front() const;
+        T back() const;
         bool empty() const;
         int size() const;
 };
